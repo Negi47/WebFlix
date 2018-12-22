@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>WebFlix</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="popup.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.6/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  </script>
+  <style>
+  
+  /* Make the image fully responsive */
+  
+  .carousel-inner img 
+  {
+      width: 100%;
+      height: 100%;
+  }
+  .m
+  {
+    
+    color: #404040;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2.5rem;
+    line-height: 1.25;
+  }
+  .p 
+  {
+    font-family: Verdana;
+    margin-top: 15px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    color: #404040;
+    line-height: 1.25;
+    letter-spacing: .05em;
+    text-transform: uppercase;
+  }
+  .q
+  {
+    
+    font-style: normal;
+    color: #404040;
+    font-weight: 200;
+    font-size: 16px;
+    font-variant: normal
+    line-height: 1.25;
+    letter-spacing: .05em;
+  }
+  .qa
+  {
+    
+    font-style: normal;
+    color: #404040;
+    font-weight: 200;
+    font-size: 16px;
+    font-variant: normal
+    line-height: 1.25;
+    letter-spacing: .05em;
+  }
+  .r
+  {
+    font-size: 29px;
+    font-variant: normal;
+    color: #404040;
+    font-style: normal;
+    font-weight: 600;
+    padding-top: 7px;
+    
+  }
+  .ra
+  {
+    font-size: 22px;
+    font-variant: normal;
+    color: #404040;
+    font-style: normal;
+    font-weight: 600;
+    padding-top: 7px;
+    
+  }
+  .s
+  {
+    font-size: 13px;
+    font-style: normal;
+    text-decoration: none;
+    font-variant: normal;
+    font-weight: 500;
+    letter-spacing: .05em;
+    color: #2bb0d8;
+  }
+  .row
+  {
+    padding-top: 15px;
+  }
+
+  .fa {
+  width: 39px;
+    height: 39px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 50%;
+    line-height: 39px;
+    position: relative;
+    padding: 0; 
+    font-size: 19px;
+    font-weight: 350; 
+}
+
+.fa:hover {
+    text-decoration: none;
+}
+
+.fa-facebook {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-youtube {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-instagram {
+  background: #55ACEE;
+  color: white;
+}
+  .cmnt
+  {
+    position: relative;
+  }
+  .cmnt .btn
+  {
+    border-radius: 0;
+    position: absolute;
+    font-weight: 400; 
+    font-size: 11px;
+    line-height: 1.25;
+    letter-spacing: .05em;
+    text-transform: uppercase;
+    background-color: #1e1e1e;
+    color: #fff;
+    opacity: .85;
+    right: 0;
+    bottom: 0;      
+  }
+  .nav-link
+  {
+    font-size: 16px;
+    font-family: "calibri";
+    color: black;
+    font-weight: 200;
+    text-decoration: none;
+    margin-bottom: 0;
+    
+    text-transform: uppercase;
+  }
+  .nav-link:hover
+  {
+    color: black;
+  }
+
+</style>
+</head>
+<body>
+  
+<nav class="navbar navbar-expand-lg" style="background-color: white; border-bottom: 1px solid lightgrey;">
+  
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" style="border: 1px solid black">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="home.html">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="series.html">Series</a>
+      </li>
+      </ul>
+      <ul class="navbar-nav navbar-right" >
+        <a class="nav-link" href="about.html">About</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="signup.html">Sign up</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="contactus.html">Contact us</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<!-- Carousel Code Here-->
+
+<div id="demo" class="carousel slide" data-ride="carousel">
+
+  <ul class="carousel-indicators">
+    <li data-target="#demo" data-slide-to="0" class="active"></li>
+    <li data-target="#demo" data-slide-to="1"></li>
+    <li data-target="#demo" data-slide-to="2"></li>
+  </ul>
+  
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="original.jpg" alt="Los Angeles" width="1100" height="500">
+    </div>
+    <div class="carousel-item">
+      <img src="original 2.jpg" alt="Chicago" width="1100" height="500">
+    </div>
+    <div class="carousel-item">
+      <img src="alleyes.jpg" alt="New York" width="1100" height="500">
+    </div>
+  </div>
+  
+  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#demo" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
+</div>
+
+<!--Carousel Ends Here -->
+
+</style>
+<div class="container">
+  <div class="row">
+      <div class="col-sm-6">
+        <img src= "David.jpeg" width="100%" height="333" class="image responsive"/>
+        <h5 class="p"> PREMIERES JANUARY 17 AT 8 PM </h5>
+        <h3 class="r"> David Bowie: The Last Five Years </h3>
+        <p class="q"> GetIn 2016, the world mourned the sudden loss of David Bowie. This intimate documentary looks at the artistic influence left behind by the groundbreaking musician, actor and fashion pioneer.</p>
+        <a onclick="modal.style.display='block'" id="watch" class="s">WATCH THE TRAILER</a>
+             <hr>
+            <div id="myModal" class="modal">
+  					<div class="modal-content">
+    					<div class="modal-header1">
+      						<span class="close1">&times;</span>
+      						<center><h2 class="lt">David Bowie: The Last Five Years</h2></center>
+    					</div>
+   						<div class="modal-body">
+      						<div class="videoWrapper">
+    							<!-- Copy & Pasted from YouTube -->
+          						<iframe width="560" height="349" src="https://www.youtube.com/embed/OwuuDpwPYxo" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe> 
+      						</div>
+    					</div>
+  					</div>
+			</div>
+    </div>
+    <script type="text/javascript">
+          var modal = document.getElementById('myModal');
+          var span = document.getElementsByClassName("close1")[0];
+          span.onclick = function() 
+          { modal.style.display = "none";
+          }
+          window.onclick = function(event) 
+          { if (event.target == modal) 
+            { modal.style.display = "none";
+            }
+          }   
+    </script>
+		
+      <div class="col-sm-6" >
+        <img src="Everything.jpeg" width="100%" height="333" class="image responsive"/>
+        <h5 class="p"> PREMIERES TONIGHT AT 8 PM </h5>
+        <h3 class="r"> Everything, Everything </h3>
+        <p class="q"> A teenager who’s confined to her home falls for the curious boy next door in this coming-of-age drama from director Stella Meghie.
+        </p>
+        <br>
+        <a onclick="modalt.style.display='block'" id="watch" class="s">WATCH THE TRAILER</a>
+        <hr>
+        	<div id="myModal1" class="modal">
+  					<div class="modal-content">
+    					<div class="modal-header1">
+      						<span class="close1">&times;</span>
+      						<center><h2 class="lt">Everything, Everything</h2></center>
+    					</div>
+   						<div class="modal-body">
+      						<div class="videoWrapper">
+    							<!-- Copy & Pasted from YouTube -->
+          						<iframe width="560" height="349" src="https://www.youtube.com/embed/0LyEE7eR0nM" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe> 
+      						</div>
+    					</div>
+  					</div>
+			</div>
+      </div>
+  </div>
+</div>
+<script type="text/javascript">
+         
+          var modalt = document.getElementById('myModal1');
+          var spant = document.getElementsByClassName("close1")[1];
+          spant.onclick = function() 
+          { modalt.style.display = "none";
+          }
+          window.onclick = function(event) 
+          { if (event.target == modalt) 
+            { modalt.style.display = "none";
+            }
+          }   
+    </script>
+<!--Below Two Box -->
+
+<h1 class="m"><center> What to Watch This Weekend</center> </h1>
+
+<div class="container">
+<div class="row">
+    <div class="col-sm-3">
+      <img src= "Nominated.jpeg" width="100%" height="153"/>
+        <h5 class="p"> Nominated Golden Globes </h5>
+        <h3 class="ra"> Get Out </h3>
+        <p class="qa"> A successful black photographer (Daniel Kaluuya) accompanies his white girlfriend (Allison Williams) to meet her parents, who have a sinister agenda planned for their stay.</p>
+        <a onclick="modalu.style.display='block'" id="watch" class="s">WATCH THE TRAILER</a>
+             <hr>
+            <div id="myModalu" class="modal">
+  					<div class="modal-content">
+    					<div class="modal-header1">
+      						<span class="close1">&times;</span>
+      						<center><h2 class="lt">Get Out</h2></center>
+    					</div>
+   						<div class="modal-body">
+      						<div class="videoWrapper">
+    							<!-- Copy & Pasted from YouTube -->
+          						<iframe width="560" height="349" src="https://www.youtube.com/embed/sRfnevzM9kQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe> 
+      						</div>
+    					</div>
+  					</div>
+			</div>
+    </div>
+    <script type="text/javascript">
+          
+          var modalu = document.getElementById('myModalu');
+          var spanr = document.getElementsByClassName("close1")[2];
+          spanr.onclick = function() 
+          { 
+            modalu.style.display = "none";
+          }
+          window.onclick = function(event) 
+          { if (event.target == modalw) 
+            { modalu.style.display = "none";
+            }
+          }   
+    </script>
+
+      <div class="col-sm-3">
+        <img src= "The_Young_Pope.jpeg" width="100%" height="153"/>
+        <h5 class="p"> GOLDEN GLOBE NOMINEE </h5>
+        <h3 class="ra"> The Young Pope </h3>
+        <p class="qa"> Jude Law is a controversial pontiff with a plan to rewrite the rules of the Vatican in this visually-stunning limited series from Italian writer-director Paolo Sorrentino.</p>
+        <a  id="watch" class="s">Find Out More</a>
+             <hr>
+             
+      </div>
+      	
+
+      <div class="col-sm-3">
+        <img src= "Information.jpeg" width="100%" height="153"/>
+        <h5 class="p"> PREMIERES SPRING 2018 </h5>
+        <h3 class="ra"> Information Is Suspect in Fahreneit 451 </h3>
+        <p class="qa"> WebFlix Film's adaptation of Ray Bradbury's groundbreaking novel will star Michael B. Jordan (<i>The Wire</i>) and Michael Shannon (<i>Boardwalk Empire</i>).</p>
+        
+        <a onclick="modale.style.display='block'" id="watch" class="s">Watch Trailer</a>
+             <hr>
+             <div id="myModal4" class="modal">
+  					<div class="modal-content">
+    					<div class="modal-header1">
+      						<span class="close1">&times;</span>
+      						<center><h2 class="lt">Fahreneit 451</h2></center>
+    					</div>
+   						<div class="modal-body">
+      						<div class="videoWrapper">
+    							<!-- Copy & Pasted from YouTube -->
+          						<iframe width="560" height="349" src="https://www.youtube.com/embed/w0PwQOr53SA" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe> 
+      						</div>
+    					</div>
+  					</div>
+			</div>
+      </div>
+
+      <script type="text/javascript">
+          var modale = document.getElementById('myModal4');
+          var span3 = document.getElementsByClassName("close1")[3];
+          span3.onclick = function() 
+          { modale.style.display = "none";
+          }
+          window.onclick = function(event) 
+          { if (event.target == modale) 
+            { modale.style.display = "none";
+            }
+          }   
+    	</script>
+
+      <div class="col-sm-3">
+        <img src="Get_Ready.jpeg" width="100%" height="153"/>
+        <h5 class="p"> PREMIERES FEBRUARY </h5>
+        <h3 class="ra"> Get Ready for 2 Dope Queens </h3>
+        <p class="qa"> Jessica Williams and Phoebe Robinson are coming to WebFlix for four hour-long specials, inspired by their hit comedy podcast.</p>
+        <a href="#" class="s">Find out More</a>
+        <hr>
+      </div>
+  </div>
+</div>
+
+<!-- Code Ends here for four boxes -->
+<br>
+
+  <center><h4>COLLECTION</h4>
+  <h3>Documentaries and Docu-Series About Musical Pioneers</h3></center>
+  <center><p>These true accounts shed light on icons and innovators who defied the odds.</p></center>
+<div class="container">
+  <div class="row">
+      <div class="col-sm-2">
+        <img src= "david1.jpeg" width="100%" height="83"/>
+      </div>
+      <div class="col-sm-4">
+        <p class="text"><b class="text1">David Bowie: The Last Five Years </b><br>
+          A portrait of the inimitable musician, actor and fashion icon who influenced everything from sound, film and art before his untimely death at 69.
+        </p>
+      </div>
+       <div class="col-sm-2">
+        <img src= "Foo_Fighter1.jpeg" width="100%" height="83"/>
+      </div>
+      <div class="col-sm-4">
+        <p class="text"><b class="text1">Foo Fighters: Sonic Highways </b><br>
+          Dave Grohl and the Foo road trip across America to visit the country’s musically-inspired cities and record their eighth studio album along the way.
+        </p>
+      </div>
+  </div>
+</div>
+
+<hr>
+<!-- Below One Box -->
+
+  <h2><center>Critically Adored WebFlix Films</center></h2>
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm-3">
+      <div class="cmnt"> 
+      <img src= "Big_Little1.jpeg" width="100%" height="153"/>
+      <span class="btn">Free Episode</span>
+      </div>
+        <h5 class="p"> 6 Nominations </h5>
+        <h3 class="r"> Big Little Lies </h3>
+        <p class="q"> An all-star cast leads this Best Limited Series nominee, about a group of mothers who unravel to the point of murder.</p>
+        <br>
+        
+        <a onclick="modalp.style.display='block'" id="watch" class="s">Watch Trailer</a>
+
+             <hr>
+             <div id="myModal6" class="modal">
+  					<div class="modal-content">
+    					<div class="modal-header1">
+      						<span class="close1">&times;</span>
+      						<center><h2 class="lt">Fahreneit 451</h2></center>
+    					</div>
+   						<div class="modal-body">
+      						<div class="videoWrapper">
+    							<!-- Copy & Pasted from YouTube -->
+          						<iframe width="560" height="349" src="https://www.youtube.com/embed/YFZcNKzDhYI" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe> 
+      						</div>
+    					</div>
+  					</div>
+			</div>
+    </div>
+    <script type="text/javascript">
+          var modalp = document.getElementById('myModal6');
+          var span7 = document.getElementsByClassName("close1")[4];
+          span7.onclick = function() 
+          { modalp.style.display = "none";
+          }
+          window.onclick = function(event) 
+          { if (event.target == modalp) 
+            { modalp.style.display = "none";
+            }
+          }   
+    	</script>
+
+
+      <div class="col-sm-3">
+        <div class="cmnt"> 
+        <img src= "Insecure.jpeg" width="100%" height="153"/>
+        <span class="btn">Free Episode</span>
+        </div>
+        <h5 class="p"> 1 Nominations </h5>
+        <h3 class="r"> Insecure </h3>
+        <p class="q"> Best Actress Nominee and series creator Issa Rae plays Issa Dee, a non-profit worker navigating her way through the tricky professional.</p>
+        <a onclick="modali.style.display='block'" id="watch" class="s">Watch Trailer</a>
+             <hr>
+             <div id="myModal7" class="modal">
+  					<div class="modal-content">
+    					<div class="modal-header1">
+      						<span class="close1">&times;</span>
+      						<center><h2 class="lt">Fahreneit 451</h2></center>
+    					</div>
+   						<div class="modal-body">
+      						<div class="videoWrapper">
+    							<!-- Copy & Pasted from YouTube -->
+          						<iframe width="560" height="349" src="https://www.youtube.com/embed/G1qYxOF7TUs" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe> 
+      						</div>
+    					</div>
+  					</div>
+			</div>
+      </div>
+      <script type="text/javascript">
+          var modali = document.getElementById('myModal7');
+          var span8 = document.getElementsByClassName("close1")[5];
+          span8.onclick = function() 
+          { modali.style.display = "none";
+          }
+          window.onclick = function(event) 
+          { if (event.target == modali) 
+            { modali.style.display = "none";
+            }
+          }   
+    	</script>
+      <div class="col-sm-3">
+        <div class="cmnt"> 
+        <img src= "sher1.jpg" width="100%" height="153"/>
+        <span class="btn">Free Episode</span>
+        </div>
+        <h5 class="p">1 Nomination</h5>
+        <h3 class="r"> Sherlock </h3>
+        <p class="q"> Dr. Watson, a former army doctor, finds himself sharing a flat with Sherlock Holmes, an eccentric individual with a knack for solving crimes.</p>
+        <a href="sherlock.html" class="s">Watch</a>
+             <hr>
+      </div>
+      <div class="col-sm-3">
+        <div class="cmnt"> 
+        <img src="Game_of_Thrones.jpeg" width="100%" height="153"/>
+        <span class="btn">Free Episode</span>
+        </div>
+        <h5 class="p">Game of Thrones </h5>
+        <h3 class="r">1 Nomination</h3>
+        <p class="q"> The most recent season of this epic series has been nominated for Best Televison Drama. Check out the first episode of Season 7, "Dragonstone."</p>
+        <a href="2nd page final.html" class="s">Find out More</a>
+        <hr>
+      </div>
+  </div>
+</div>
+  <!-- Below 4 Box Paragraph -->
+
+<style type="text/css">
+.text
+{
+	font-variant: normal;
+	font-weight: 150;
+}
+.text1
+{
+	font-variant: normal;
+	font-weight: 450;
+}
+  .buttomtext
+  {
+
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.25;
+    text-transform: uppercase;
+  }
+  .o
+  {
+    color: white;
+    margin-top: 20px;
+    font-size: .7875rem;
+    font-style: normal;
+    font-weight: 100;
+  }
+  
+  .footer
+  {
+    background-color: #4f4f4f;
+    color: #fff;
+    text-align: center; 
+  }
+  .l
+  {
+    
+    color: #fff;
+    text-align: center; 
+  }
+</style>
+<!-- Footer Codes Start Here -->
+
+<div class="footer container-fluid">
+  </br>
+    <h2 class="buttomtext">FOLLOW WebFlix</h2>
+     
+    <a href="signup.html" class="fa fa-facebook" style="margin-bottom: 28px;"></a>
+    <a href="signup.html" class="fa fa-twitter"></a>
+    <a href="signup.html" class="fa fa-youtube"></a>
+    <a href="signup.html" class="fa fa-instagram"></a>
+</div>
+<div class="footer container-fluid" style="background-color: #404040;">
+  <br>
+    <h2 class="buttomtext">WebFlix</h2>
+    </br>
+    <a href="about.html" style="text-decoration: none; color: white; margin-bottom: 28px;">ABOUT</a>&emsp;&emsp;&nbsp;&emsp;&nbsp;
+    <a href="contactus.html" style="text-decoration: none; color: white;">HELP</a>&emsp;&emsp;&emsp;
+    <a href="faqs.html" style="text-decoration: none; color: white;">CAREERS</a>
+    <p class="o">  © 2018 Home Box Office, Inc. All Rights Reserved.<br>
+  This website may contain mature content</p>
+    <span>&emsp;</span>
+</div>
+<!-- Footer Codes End Here -->
+</body>
+</html>
+
+
+
+

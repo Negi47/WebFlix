@@ -1,0 +1,128 @@
+
+<html>
+<head>
+	<title>Login</title>
+ <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+ <style>
+  h1 {
+  	font-size: 22%
+    letter-spacing: 3px;
+    word-spacing: 10px;
+   
+}
+.bg-4
+{
+	background-color: #2f2f2f; /* Black Gray */
+      color: #fff
+}
+body
+{
+	background-color: #fbfcfc;
+}
+h2
+{
+	
+    letter-spacing: 3px;
+    word-spacing: 10px;
+   
+}
+.container
+{
+    position: fixed;
+    margin-left:  25%;
+    margin-top: 5%;
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    width: 50%;
+    max-width: 550px;
+    padding: 20px;
+}
+button {
+    background-color: #4CAF50;
+    color: white;
+    font-family: calibri;
+  font-variant: normal;
+  font-weight: 100;
+  font-size: 18px;
+    padding: 10px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 90%;
+    opacity: 0.9;
+}
+
+button:hover {
+    opacity:1;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+    padding: 10px 20px;
+    background-color: #f44336;
+}
+
+/* Float cancel and signup buttons and add an equal width */
+.cancelbtn, .signupbtn {
+  float: left;
+  width: 50%;
+}
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
+}
+</style>
+
+<script type="text/javascript">
+  function check(){
+      
+    if (document.form1.email1.value == "negi@gmail.com" && document.form1.pass.value=="12345678") {
+        document.form1.action ="home.html";
+        document.form1.submit();
+    }else{
+      alert("Entered email and password does not match")
+    }
+
+
+  }
+</script>
+
+
+</head>
+<body>
+<video autoplay muted loop id="myVideo">
+  <source src="signup.mp4" type="video/mp4">
+  Your browser does not support HTML5 video.
+</video>
+	<div class="container">
+<h1><center>WebFlix </center></h1>
+<hr>
+<center>
+	<h2>Login:</h2>
+	<form class="form-signin" name="form1" >
+        <h3 class="form-signin-heading">Please Enter the user id and password:</h3>
+        
+        <label for="inputEmail" class="sr-only">Email address</label><br>
+        <input type="email" id="inputEmail" class="form-control" name="email1" placeholder="Enter Email" required autofocus>
+        <label for="inputPassword" class="sr-only">Password</label><br>
+        <input type="password" id="inputPassword" class="form-control" name="pass" placeholder="Password" required>
+        <div class="checkbox">
+          
+           <label><input type="checkbox" value="remember-me">Remember me</label>
+          
+        </div>
+        <a><button class="btn btn-lg btn-primary btn-block signupbtn" onclick="check()" type="submit">Sign in</button></a>
+        <button class="btn btn-lg btn-primary btn-block cancelbtn">Cancel</button>
+      </form>
+  
+</center>
+</div>
+</body>
+</html>
